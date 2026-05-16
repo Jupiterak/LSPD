@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSPD | Divize</title>
+    <link rel="icon" type="image/png" href="https://static.wikia.nocookie.net/diamond-city/images/c/c0/LSPD.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#050b14]">
+
+    <nav class="navbar bg-[#050b14]/95 border-b border-slate-800 sticky top-0 z-50 backdrop-blur-xl">
+        <div class="emergency-wrapper">
+            <input type="checkbox" id="close-alert" class="alert-hide-check">
+            <div class="emergency-bar">
+                <div class="alert-pulse-bg"></div>
+                <div class="alert-inner">
+                    <div class="alert-left">
+                        <div class="alert-blink-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                        <div class="alert-text-group">
+                            <span class="alert-tag">Nouzový stav</span>
+                            <p class="alert-main-text">Zvýšená kriminalita!</p>
+                        </div>
+                    </div>
+                    <label for="close-alert" class="alert-close-btn"><i class="fa-solid fa-xmark"></i></label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="max-w-screen-2xl mx-auto px-8 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-x-3">
+                <img src="https://static.wikia.nocookie.net/diamond-city/images/c/c0/LSPD.png" alt="LSPD Logo" class="h-12 w-auto">
+                <div>
+                    <h1 class="text-3xl font-bold tracking-tighter text-white">LSPD</h1>
+                    <p class="text-[10px] text-blue-500 font-mono tracking-widest -mt-1 uppercase">Divize</p>
+                </div>
+            </div>
+
+            <div class="hidden lg:flex items-center gap-x-8 text-sm font-medium text-white">
+                <a href="index.html" class="hover:text-blue-400 transition flex items-center gap-x-2"><i class="fa-solid fa-house"></i> Domů</a>
+                <a href="divize.html" class="nav-link active-link"><i class="fa-solid fa-shield-halved"></i> Divize</a>
+                <a href="vedeni.html" class="hover:text-blue-400 transition flex items-center gap-x-2"><i class="fa-solid fa-user-tie"></i> Vedení</a>
+                <a href="academy.html" class="hover:text-blue-400 transition flex items-center gap-x-2"><i class="fa-solid fa-graduation-cap"></i> Akademie</a>
+                <a href="news.html" class="hover:text-blue-400 transition flex items-center gap-x-2"><i class="fa-solid fa-bullhorn"></i> Oznámení</a>
+            </div>
+
+            <div class="flex items-center gap-x-4">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdk6mGmSan4uDUZUjz5eqShdD3J2PFtNVbVT1d-BDWwVxjZ7Q/viewform?usp=dialog" class="px-6 py-2.5 bg-white text-[#0a1428] hover:bg-red-600 hover:text-white font-semibold text-sm rounded-xl transition-all flex items-center gap-x-2">
+                    <i class="fa-solid fa-triangle-exclamation"></i> Podat stížnost
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-screen-2xl mx-auto px-8 py-16">
+        <div class="section-title-box mb-20 text-center">
+            <h2 class="section-title text-white text-5xl font-black tracking-tight">Organizační struktura</h2>
+            <p class="text-slate-400 mt-4 text-base">Přejděte kurzorem nad hlavní útvar pro rozbalení podřízených sekcí a velení.</p>
+        </div>
+
+        <div class="bureau-grid">
+            
+            <div class="bureau-card top-row psb-theme">
+                <div class="card-glow-line bg-blue-600"></div>
+                <div class="card-icon-box text-blue-500"><i class="fa-solid fa-scale-balanced"></i></div>
+                <h3 class="text-white text-2xl font-bold tracking-tight">Professional Standards Bureau</h3>
+                <p class="text-blue-500 text-xs font-mono tracking-wider uppercase mt-1" >PSB</p>
+                <p class="static-desc">Útvar přímo podřízený Chief of Police. Zajišťuje absolutní dodržování kodexu, vnitřní čistotu a ochranu před korupcí uvnitř celého sboru.</p>
+                
+                <div class="hover-details">
+                    <div class="subdivisions-list space-y-3">
+                        <p class="text-xs text-slate-300 leading-normal">
+                            <strong class="text-blue-400 block mb-0.5">Internal Affairs Group (IAG):</strong> Vyšetrovanie sťažností, korupcie a pochybení policajtov.
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-800 pt-3">
+                        <span class="text-[10px] uppercase font-bold text-blue-500 tracking-wider block">Velitel útvaru</span>
+                        <h4 class="text-white font-bold text-sm">Chief of Police - S. Thomas</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bureau-card top-row db-theme">
+                <div class="card-glow-line bg-purple-600"></div>
+                <div class="card-icon-box text-purple-400"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <h3 class="text-white text-2xl font-bold tracking-tight">Detective Bureau</h3>
+                <p class="text-purple-400 text-xs font-mono tracking-wider uppercase mt-1">DB</p>
+                <p class="static-desc">Centrální detektivní divize zodpovědná za zpracování trestných činů, analýzu stop, sledování organizovaných syndikátů a CSI operace.</p>
+                
+                <div class="hover-details">
+                    <div class="subdivisions-list space-y-3">
+                        <p class="text-[11px] text-slate-300 leading-snug"><strong class="text-purple-400">Gang and Narcotics (GND):</strong> Boj proti gangom a distribúcii drog.</p>
+                        <p class="text-[11px] text-slate-300 leading-snug"><strong class="text-purple-400">Robbery-Homicide (RHD):</strong> Vyšetrovanie vrážd, prepadnutí a únosov.</p>
+                        <p class="text-[11px] text-slate-300 leading-snug"><strong class="text-purple-400">Commercial Crimes Division:</strong> Hospodárska kriminalita a podvody.</p>
+                        <p class="text-[11px] text-slate-300 leading-snug"><strong class="text-purple-400">Forensic Science (FSD):</strong> Kriminalistickí technici a laboratóriá (CSI).</p>
+                    </div>
+                    <div class="border-t border-slate-800 pt-3">
+                        <span class="text-[10px] uppercase font-bold text-purple-400 tracking-wider block">Velitel útvaru</span>
+                        <h4 class="text-white font-bold text-sm">Commander - S. Bosco</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bureau-card top-row ctsob-theme">
+                <div class="card-glow-line bg-red-600"></div>
+                <div class="card-icon-box text-red-500"><i class="fa-solid fa-shield-halved"></i></div>
+                <h3 class="text-white text-xl font-bold tracking-tight">Counter-Terrorism & Spec. Ops</h3>
+                <p class="text-red-500 text-xs font-mono tracking-wider uppercase mt-1">CTSOB</p>
+                <p class="static-desc">Zastřešuje speciální taktické jednotky s těžkou zbrojí, zásahové čaty a divizi letecké podpory pro vysoce rizikové situace.</p>
+                
+                <div class="hover-details">
+                    <div class="subdivisions-list space-y-2">
+                        <p class="text-[11px] text-slate-300 leading-none"><strong class="text-red-400">Metropolitan Division (Metro):</strong> Elitné čaty:</p>
+                        <p class="text-[10px] text-slate-400 pl-3 leading-none">• <strong>D Platoon (SWAT):</strong> Zásahová jednotka.</p>
+                        <p class="text-[10px] text-slate-400 pl-3 leading-none">• <strong>K9 Platoon:</strong> Psovodi.</p>
+                        <p class="text-[10px] text-slate-400 pl-3 leading-none">• <strong>E Platoon:</strong> Jazdná polícia.</p>
+                        <p class="text-[11px] text-slate-300 leading-snug pt-1"><strong class="text-red-400">Air Support Division (ASD):</strong> Policajné vrtuľníky.</p>
+                        <p class="text-[11px] text-slate-300 leading-snug"><strong class="text-red-400">Major Crimes Division (MCD):</strong> Terorizmus a extrémizmus.</p>
+                    </div>
+                    <div class="border-t border-slate-800 pt-3">
+                        <span class="text-[10px] uppercase font-bold text-red-400 tracking-wider block">Velitel útvaru</span>
+                        <h4 class="text-white font-bold text-sm">Asst. Chief - Michael Oneill</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bureau-card bottom-row-1 tsb-theme">
+                <div class="card-glow-line bg-orange-500"></div>
+                <div class="card-icon-box text-orange-400"><i class="fa-solid fa-bus"></i></div>
+                <h3 class="text-white text-2xl font-bold tracking-tight">Transit Services Bureau</h3>
+                <p class="text-orange-400 text-xs font-mono tracking-wider uppercase mt-1">TSB</p>
+                <p class="static-desc">Zajišťuje kompletní dohled nad dálnicemi, linkami podzemního i nadzemního metra, spravuje rychlé zásahové stíhače a motohlídky.</p>
+                
+                <div class="hover-details">
+                    <div class="subdivisions-list space-y-2">
+                        <p class="text-[11px] text-slate-300 leading-snug"><strong class="text-orange-400">Transit Services Group:</strong> Bezpečnosť v MHD (metro, busy).</p>
+                        <p class="text-[11px] text-slate-300 leading-snug"><strong class="text-orange-400">Traffic Group:</strong> Dopravné divízie a motorky:</p>
+                        <p class="text-[10px] text-slate-400 pl-3 leading-none">• <strong>Central Traffic:</strong> Bežný dopravný výkon.</p>
+                        <p class="text-[10px] text-slate-400 pl-3 leading-none">• <strong>Motor Unit:</strong> Policajti na motorkách.</p>
+                        <p class="text-[10px] text-slate-400 pl-3 leading-none">• <strong>Specialized Enforcement (SES):</strong> Eskorty a VIP sprievody.</p>
+                    </div>
+                    <div class="border-t border-slate-800 pt-3">
+                        <span class="text-[10px] uppercase font-bold text-orange-400 tracking-wider block">Velitel útvaru</span>
+                        <h4 class="text-white font-bold text-sm">Captain J. Lopéz</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bureau-card bottom-row-2 tb-theme">
+                <div class="card-glow-line bg-pink-600"></div>
+                <div class="card-icon-box text-pink-500"><i class="fa-solid fa-graduation-cap"></i></div>
+                <h3 class="text-white text-2xl font-bold tracking-tight">Training Bureau</h3>
+                <p class="text-pink-500 text-xs font-mono tracking-wider uppercase mt-1">TB</p>
+                <p class="static-desc">Zodpovídá za správu policejní akademie, výcvik kadetů v terénu, taktickou i střeleckou přípravu a procesy náboru nových rekrutů.</p>
+                
+                <div class="hover-details">
+                    <div class="subdivisions-list space-y-3">
+                        <p class="text-xs text-slate-300 leading-normal">
+                            <strong class="text-pink-400 block mb-0.5">Training Division (Academy):</strong> Policajná akadémia, výcvik nováčikov a strelecká príprava.
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-800 pt-3">
+                        <span class="text-[10px] uppercase font-bold text-pink-400 tracking-wider block">Velitel útvaru</span>
+                        <h4 class="text-white font-bold text-sm">Chief of Police - S. Thomas</h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="main-footer border-t border-slate-900 bg-[#050b14]">
+        <div class="max-w-screen-2xl mx-auto px-8 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div>
+                    <div class="flex items-center gap-x-3 mb-6">
+                        <img src="https://static.wikia.nocookie.net/diamond-city/images/c/c0/LSPD.png" alt="LSPD Logo" class="h-10 w-auto opacity-80">
+                        <h2 class="text-2xl font-black tracking-tighter text-white">LSPD</h2>
+                    </div>
+                    <p class="text-slate-500 text-sm leading-relaxed">Oficiální portál policejního oddělení Los Santos. Chráníme bezpečnost a pořádek v ulicích našeho města 24/7.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold uppercase text-xs tracking-widest mb-6">Navigace</h4>
+                    <ul class="footer-links space-y-3">
+                        <li><a href="index.html">Hlavní stránka</a></li>
+                        <li><a href="divize.html">Divize sboru</a></li>
+                        <li><a href="vedeni.html">Vedení LSPD</a></li>
+                        <li><a href="academy.html">Policejní akademie</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold uppercase text-xs tracking-widest mb-6">Podpora</h4>
+                    <ul class="footer-links space-y-3">
+                        <li><a href="https://docs.google.com/forms/d/1sW8FSomtoTWtTk2x8ZR8gZJqjrSR2MvSDOze3cM3F0Y/edit?chromeless=1">Stížnosti na důstojníky</a></li>
+                        <li><a href="https://discord.gg/twQmHkRu5R">Trestní zákoník</a></li>
+                        <li><a href="#">Časté dotazy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold uppercase text-xs tracking-widest mb-6">Sídlo</h4>
+                    <p class="text-slate-500 text-sm mb-4">Vespucci Police Station<br>San Andreas Avenue, Los Santos</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="footer-social-icon"><i class="fa-brands fa-discord"></i></a>
+                        <a href="https://docs.google.com/forms/d/1-U0PTSVVx-R2bm7Mfep4bvLITmagsBzN_9uMXjS5U7w/viewform?edit_requested=true" class="footer-social-icon"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-slate-600 text-xs font-medium uppercase tracking-widest">To Protect and Serve</p>
+                <div class="flex gap-6">
+                    <a href="#" class="text-slate-600 hover:text-white text-[10px] uppercase font-bold tracking-tighter transition-colors">Ochrana soukromí</a>
+                    <a href="#" class="text-slate-600 hover:text-white text-[10px] uppercase font-bold tracking-tighter transition-colors">Podmínky služby</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
